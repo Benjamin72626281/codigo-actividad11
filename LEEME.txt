@@ -1,0 +1,18 @@
+Actividad 11. Sistemas Inteligentes II
+
+app_marketing_ia.py   Asesor Basico de Marketing (Dash + API de Gemini + API de Groq)
+pruebas_app.py        Pruebas (usan respuestas simuladas, no gastan las APIs)
+requirements.txt      Bibliotecas necesarias
+
+Instalar:  pip install -r requirements.txt
+Llaves:    GEMINI_API_KEY  -> https://aistudio.google.com/apikey
+           GROQ_API_KEY    -> https://console.groq.com/keys
+           Windows (PowerShell):
+               $env:GEMINI_API_KEY="tu_llave_de_gemini"
+               $env:GROQ_API_KEY="tu_llave_de_groq"
+           (o pegarlas entre comillas en las dos primeras constantes de app_marketing_ia.py, solo para pruebas)
+Ejecutar:  python app_marketing_ia.py        y abrir http://127.0.0.1:8050/
+Pruebas:   python pruebas_app.py
+Modelos:   gemini-3.8-flash (respaldo gemini-3.6-flash) y llama-3.3-70b-versatile
+           Se pueden cambiar con las variables GEMINI_MODEL y GROQ_MODEL.
+Si una de las dos llaves falta, la app igual funciona con la otra.
